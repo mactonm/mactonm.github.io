@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default" # Currently available options are "default", "air"
-title                    : "Macton Mgonzo / Homepage"
+title                    : "Homepage" #
 title_separator          : "-"
 name                     : &name "Macton Mgonzo"
 description              : &description "Your Name's academic portfolio"   # Update this with a general description of your site, this is the default if not overridden by a page
@@ -24,7 +24,7 @@ repository               : "academicpages/academicpages.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Your Sidebar Name"
+  name             : "Macton Mgonzo"
   pronouns         : # example: "he/him"  
   bio              : "Short biography for the left-hand sidebar"
   location         : "Earth"
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "www.linkedin.com/in/macton-mgonzo-83045064"
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username
