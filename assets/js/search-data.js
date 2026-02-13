@@ -472,6 +472,13 @@ ninja.data = [{
           window.open("mailto:%6D%61%63%74%6F%6E@%62%72%6F%77%6E.%65%64%75", "_blank");
         },
       },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/macton-mgonzo-83045064", "_blank");
+        },
+      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
