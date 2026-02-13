@@ -29,7 +29,7 @@ I am a PhD student at [Brown University](https://www.brown.edu/) specializing in
 
 My goal is to bridge the gap in AI capabilities for **low-resource and critically underrepresented languages**. My work explores multimodal models and robust evaluation frameworks to ensure that advancements in AI are accessible, safe, and culturally aligned for global communities.
 
-## <i class="fa-solid fa-microscope"></i> Current Research Areas
+<i class="fa-solid fa-microscope"></i> Current Research Areas
 
 * **Clinical Evaluation of AI:** I study the deployment of AI in real-world healthcare settings, with a specific focus on the unique constraints of low-resource environments.
 * **AI Safety & Alignment:** I evaluate LLM safety policies within local contexts to ensure models respect regional norms and harm scenarios.
