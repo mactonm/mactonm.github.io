@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper *Learning from Scarcity: Building and Benchmarking Speech Technology for Sukuma.* accepted to the EACL 2026 workshop on Language Models for Low-Resource Languages: :smile:
+**New Paper!** 📚 Our work, *"Learning from Scarcity: Building and Benchmarking Speech Technology for Sukuma,"* has been accepted to the **EACL 2026** workshop on *Language Models for Low-Resource Languages* (LoResLM) :sparkles: :smile:
