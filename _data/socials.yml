@@ -4,13 +4,8 @@
 cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
 email: macton@ebrown.edu # your email address
 linked_in: htpps://linkedin.com/in/macton-mgonzo-83045064
-twitter_username: mgonzo_m
-# inspirehep_id: 1010907 # Inspire HEP author ID
-# rss_icon: true # comment this line to hide the RSS icon
+twitter_username: https://x.com/mgonzo_m
 scholar_userid: y6KKlnQAAAAJ # your Google Scholar ID
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 # whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-# custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
-#   logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
-#   title: Custom Social
-#   url: https://www.alberteinstein.com/
+
