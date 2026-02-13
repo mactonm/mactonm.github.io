@@ -399,8 +399,8 @@ ninja.data = [{
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2/";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
+            },},{id: "news-our-paper-learning-from-scarcity-building-and-benchmarking-speech-technology-for-sukuma-accepted-to-the-eacl-2026-workshop-on-language-models-for-low-resource-languages-smile",
+          title: 'Our paper Learning from Scarcity: Building and Benchmarking Speech Technology for Sukuma. accepted...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
