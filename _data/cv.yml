@@ -57,7 +57,6 @@ cv:
           - Computer Science Lecturer at the College of Business Education (CBE) in Tanzania.
            - Taught courses in Computer Science, including Programming, Data Structures, Algorithms, and Software Engineering.
            - Supervised undergraduate research projects in Computer Science.
-          - Description 2.
 
       - company: Center for Financial Inclusion (Cenfri)
         position: Data Scientist
@@ -69,14 +68,6 @@ cv:
         using a dataset of financial and demographic information. I also worked on a project to develop a machine learning model to predict the likelihood of 
         financial inclusion for individuals in South Africa, using a dataset of financial and demographic information.
         highlights:
-          - Description 1.
-          - Description 2.
-
-      - company: Kaiser Wilhelm Institute for Physics
-        position: Director
-        location: Berlin, Germany
-        start_date: 1917
-        end_date: 1933
 
 
     Volunteer:
@@ -138,11 +129,11 @@ cv:
         keywords: "Quantum Mechanics, Quantum Computing, Quantum Information, Quantum Cryptography, Quantum Communication, Quantum Teleportation"
 
     Languages:
-      - name: German
-        summary: "Native speaker"
-
       - name: English
         summary: "Fluent"
+
+      - name: Swahili
+        summary: "Native Speaker."
 
     Interests:
       - name: Physics
