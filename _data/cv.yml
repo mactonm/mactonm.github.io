@@ -1,6 +1,6 @@
 cv:
   name: Macton Mgonzo
-  label: Scientist
+  label: PhD Student
   email: macton@brown.edu
   location: Providence, RI
   image: ""
@@ -39,9 +39,9 @@ cv:
       - institution: Saint Augustine University of Tanzania
         location: Iringa, Tanzania
         area: Computer Science
-        studyType: Degree
+        studyType: BSc
         start_date: 2006
-        end_date: 2009
+        end_date: 2009 
         highlights:
           - Description 1.
           - Description 2.
@@ -52,22 +52,20 @@ cv:
         location: Dodoma, Tanzania
         start_date: 2014
         end_date: 2021
-        summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
+        summary: Worked as assistant lecturer at the College of Business Education (CBE) in Tanzania.
         highlights:
-          - Computer Science Lecturer at the College of Business Education (CBE) in Tanzania.
-           - Taught courses in Computer Science, including Programming, Data Structures, Algorithms, and Software Engineering.
-           - Supervised undergraduate research projects in Computer Science.
+          - Taught programming in C/C++ and business mathematics.
+          - Supervised undergraduate research projects.
 
       - company: Center for Financial Inclusion (Cenfri)
         position: Data Scientist
         location: Cape Town, South Africa
         start_date: 2018-01-03
         end_date: 2018-11-30
-        summary: Data Scientist at the Center for Financial Inclusion (Cenfri) in Cape Town, South Africa. 
-        I worked on a project to develop a machine learning model to predict the likelihood of financial inclusion for individuals in South Africa, 
-        using a dataset of financial and demographic information. I also worked on a project to develop a machine learning model to predict the likelihood of 
-        financial inclusion for individuals in South Africa, using a dataset of financial and demographic information.
-        highlights:
+        summary: > 
+          Data Scientist at the Center for Financial Inclusion (Cenfri) in Cape Town, South Africa. 
+          I worked on a project to develop a machine learning model to predict the likelihood of financial inclusion for individuals in Tanzania, 
+          using mobile data transactions and demographic information.
 
 
     Volunteer:
@@ -90,12 +88,6 @@ cv:
         url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
         summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
 
-      - title: Max Planck Medal
-        authors:
-          - "German Physical Society"
-        date: 2029
-        awarder: German Physical Society
-        summary: Awarded for outstanding scientific achievement
 
     Publications:
       - title: Zur Elektrodynamik bewegter Körper
