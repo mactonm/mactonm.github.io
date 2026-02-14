@@ -33,8 +33,8 @@ cv:
         score: ""
         courses: "Machine Learning, Deep Learning, Natural Language Processing, Evaluation of health information systems."
         highlights:
-          - Description 1.
-          - Description 2.
+          # - Description 1.
+          # - Description 2.
 
       - institution: Saint Augustine University of Tanzania
         location: Iringa, Tanzania
@@ -43,8 +43,8 @@ cv:
         start_date: 2006
         end_date: 2009 
         highlights:
-          - Description 1.
-          - Description 2.
+          # - Description 1.
+          # - Description 2.
 
     Experience:
       - company: College of Business Education (CBE)
@@ -68,16 +68,16 @@ cv:
           using mobile data transactions and demographic information.
 
 
-    Volunteer:
-      - company: People's Climate March
-        position: Lead Organizer
-        location: Zurich, Switzerland
-        start_date: 2014-04-01
-        end_date: 2015-07-01
-        summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
-        highlights:
-          - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
-          - "Men of the year 2014 by Time magazine"
+    # Volunteer:
+    #   - company: People's Climate March
+    #     position: Lead Organizer
+    #     location: Zurich, Switzerland
+    #     start_date: 2014-04-01
+    #     end_date: 2015-07-01
+    #     summary: Lead organizer for the New York City branch of the People's Climate March, the largest climate march in history.
+    #     highlights:
+    #       - "Awarded 'Climate Hero' award by Greenpeace for my efforts organizing the march."
+    #       - "Men of the year 2014 by Time magazine"
 
     Awards:
       - title: Nobel Prize in Physics
@@ -133,14 +133,14 @@ cv:
 
 
 
-    Projects:
-      - name: Quantum Computing
-        summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
-        highlights:
-          - Quantum Teleportation
-          - Quantum Cryptography
-        start_date: 2018-01-01
-        end_date: 2018-01-01
+    # Projects:
+    #   - name: Quantum Computing
+    #     summary: Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.
+    #     highlights:
+    #       - Quantum Teleportation
+    #       - Quantum Cryptography
+    #     start_date: 2018-01-01
+    #     end_date: 2018-01-01
 
     References:
       - name: Professor Hamish Fraser
