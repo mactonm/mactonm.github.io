@@ -1,67 +1,73 @@
 cv:
-  name: Albert Einstein
+  name: Macton Mgonzo
   label: Scientist
-  email: einstein@example.com
-  location: Princeton, NJ
+  email: macton@brown.edu
+  location: Providence, RI
   image: ""
-  summary: A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time
+  summary: A PhD student in Computational Biology at Brown University, with a background in computer science. I have experience in machine learning, data analysis, and scientific research, and I am eager to apply my skills to solve complex problems in the field of healthcare.
 
   social_networks:
     - network: X
-      username: AlbertEinstein
+      username: mgonzo_m
     - network: GitHub
-      username: example
+      username: mactonm
     - network: LinkedIn
-      username: example
+      username: macton-mgonzo
 
   address:
-    street: 2712 Broadway St
-    city: San Francisco
-    region: California
-    postalCode: CA 94115
+    street: 164 Angell St
+    city: Providence
+    region: Rhode Island
+    postalCode: RI 02906
     countryCode: US
 
   sections:
     Education:
-      - institution: University of Zurich
-        location: Zurich, Switzerland
-        url: https://www.uzh.ch/
-        area: Physics
+      - institution: Brown University
+        location: Providence, RI, USA
+        url: https://www.brown.edu/
+        area: Computational Biology
         studyType: PhD
-        start_date: 1900
-        end_date: 1905
+        start_date: 2021
+        end_date: 2027
         score: ""
-        courses: "Theory of Relativity"
+        courses: "Machine Learning, Deep Learning, Natural Language Processing, Evaluation of health information systems."
         highlights:
           - Description 1.
           - Description 2.
 
-      - institution: Eidgenössische Technische Hochschule
-        location: Zurich, Switzerland
-        area: Physics
-        studyType: Federal teaching diploma
-        start_date: 1896
-        end_date: 1900
+      - institution: Saint Augustine University of Tanzania
+        location: Iringa, Tanzania
+        area: Computer Science
+        studyType: Degree
+        start_date: 2006
+        end_date: 2009
         highlights:
           - Description 1.
           - Description 2.
 
     Experience:
-      - company: Institute for Advanced Study, Princeton University
-        position: Professor of Theoretical Physics
-        location: Princeton University, NJ
-        start_date: 1933
-        end_date: 1955
+      - company: College of Business Education (CBE)
+        position: Assistant Lecturer
+        location: Dodoma, Tanzania
+        start_date: 2014
+        end_date: 2021
         summary: Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.
         highlights:
-          - Relativity
+          - Computer Science Lecturer at the College of Business Education (CBE) in Tanzania.
+           - Taught courses in Computer Science, including Programming, Data Structures, Algorithms, and Software Engineering.
+           - Supervised undergraduate research projects in Computer Science.
           - Description 2.
 
-      - company: California Institute of Technology
-        position: Visiting Professor
-        location: Pasadena, California, US
-        start_date: 1933
-        end_date: 1933
+      - company: Center for Financial Inclusion (Cenfri)
+        position: Data Scientist
+        location: Cape Town, South Africa
+        start_date: 2018-01-03
+        end_date: 2018-11-30
+        summary: Data Scientist at the Center for Financial Inclusion (Cenfri) in Cape Town, South Africa. 
+        I worked on a project to develop a machine learning model to predict the likelihood of financial inclusion for individuals in South Africa, 
+        using a dataset of financial and demographic information. I also worked on a project to develop a machine learning model to predict the likelihood of 
+        financial inclusion for individuals in South Africa, using a dataset of financial and demographic information.
         highlights:
           - Description 1.
           - Description 2.
@@ -72,17 +78,6 @@ cv:
         start_date: 1917
         end_date: 1933
 
-      - company: Karl-Ferdinand University
-        position: Professor of Theoretical Physics
-        location: Prague, Czechoslovakia
-        start_date: 1911
-        end_date: 1917
-
-      - company: University of Zurich
-        position: Associate Professor of Theoretical Physics
-        location: Zurich, Switzerland
-        start_date: 1909
-        end_date: 1911
 
     Volunteer:
       - company: People's Climate March
@@ -180,10 +175,10 @@ cv:
         end_date: 2018-01-01
 
     References:
-      - name: Professor John Doe
+      - name: Professor Hamish Fraser
         icon: fa-solid fa-laptop
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+        reference: Brown University, Providence, RI, USA.
 
-      - name: Professor Jane Smith
+      - name: Doctor George Zerveas
         icon: fa-solid fa-thumbtack
-        reference: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit.
+        reference: Microsoft Research - Redmond, WA, USA.
