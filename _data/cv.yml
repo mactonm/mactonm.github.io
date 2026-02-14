@@ -7,12 +7,12 @@ cv:
   summary: A PhD student in Computational Biology at Brown University, with a background in computer science. I have experience in machine learning, data analysis, and scientific research, and I am eager to apply my skills to solve complex problems in the field of healthcare.
 
   social_networks:
-    - network: X
+    - network: Twitter
       username: mgonzo_m
     - network: GitHub
       username: mactonm
     - network: LinkedIn
-      username: macton-mgonzo
+      username: macton-mgonzo-83045064
 
   address:
     street: 164 Angell St
