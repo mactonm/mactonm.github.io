@@ -7,7 +7,7 @@ cv:
   summary: A PhD student in Computational Biology at Brown University, with a background in computer science. I have experience in machine learning, data analysis, and scientific research, and I am eager to apply my skills to solve complex problems in the field of healthcare.
 
   social_networks:
-    - network: Twitter
+    - network: X
       username: mgonzo_m
     - network: GitHub
       username: mactonm
@@ -124,7 +124,7 @@ cv:
 
     Certificates:
       - name: Machine Learning
-        date: 2018-01-01
+        date: 2023-08-30
         issuer: Stanford University
         icon: fa-solid fa-location-dot
 
@@ -138,10 +138,10 @@ cv:
     #     end_date: 2018-01-01
 
     References:
-      - name: Professor Hamish Fraser
+      - name: Prof. Hamish Fraser
         icon: fa-solid fa-laptop
         reference: Brown University, Providence, RI, USA.
 
-      - name: Doctor George Zerveas
+      - name: Dr. George Zerveas
         icon: fa-solid fa-thumbtack
         reference: Microsoft Research - Redmond, WA, USA.
