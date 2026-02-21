@@ -17,11 +17,7 @@
   "postAttachCommand": "./bin/entry_point.sh",
   "customizations": {
     "vscode": {
-      "extensions": [
-        "esbenp.prettier-vscode",
-        "sissel.shopify-liquid",
-        "yzhang.markdown-all-in-one"
-      ],
+      "extensions": ["esbenp.prettier-vscode", "sissel.shopify-liquid", "yzhang.markdown-all-in-one"],
       "settings": {
         "prettier.configPath": ".prettierrc",
         "editor.formatOnSave": true

@@ -41,7 +41,7 @@ cv:
         area: Computer Science
         studyType: BSc
         start_date: 2006
-        end_date: 2009 
+        end_date: 2009
         highlights:
           # - Description 1.
           # - Description 2.
@@ -62,11 +62,10 @@ cv:
         location: Cape Town, South Africa
         start_date: 2018-01-03
         end_date: 2018-11-30
-        summary: > 
+        summary: >
           Data Scientist at the Center for Financial Inclusion (Cenfri) in Cape Town, South Africa. 
           I worked on a project to develop a machine learning model to predict the likelihood of financial inclusion for individuals in Tanzania, 
           using mobile data transactions and demographic information.
-
 
     # Volunteer:
     #   - company: People's Climate March
@@ -88,7 +87,6 @@ cv:
         url: https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/
         summary: The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'
 
-
     Publications:
       - title: Zur Elektrodynamik bewegter Körper
         authors:
@@ -105,7 +103,6 @@ cv:
         releaseDate: 1905-03-18
         url: https://de.wikisource.org/wiki/Über_einen_die_Erzeugung_und_Verwandlung_des_Lichtes_betreffenden_heuristischen_Gesichtspunkt
         summary: In the second paper, he applied the quantum theory to light to explain the photoelectric effect. In particular, he used the idea of light quanta (photons) to explain experimental results, but stressed the importance of the experimental results. The importance of his work on the photoelectric effect earned him the Nobel Prize in Physics in 1921.
-
 
     Skills:
       - name: Physics
@@ -130,8 +127,6 @@ cv:
         date: 2018-01-01
         issuer: Stanford University
         icon: fa-solid fa-location-dot
-
-
 
     # Projects:
     #   - name: Quantum Computing

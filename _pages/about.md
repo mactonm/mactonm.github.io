@@ -3,13 +3,11 @@ layout: about
 title: About
 permalink: /
 
-
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: true # crops the image to make it circular
   more_info: >
-    
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -25,13 +23,12 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD student at [Brown University](https://www.brown.edu/) specializing in **Machine Learning** and **Natural Language Processing**. 
+I am a PhD student at [Brown University](https://www.brown.edu/) specializing in **Machine Learning** and **Natural Language Processing**.
 
 My goal is to bridge the gap in AI capabilities for **low-resource and critically underrepresented languages**. My work explores multimodal models and robust evaluation frameworks to ensure that advancements in AI are accessible, safe, and culturally aligned for global communities.
 
 <i class="fa-solid fa-microscope"></i> Current Research Areas
 
-* **Clinical Evaluation of AI:** I study the deployment of AI in real-world healthcare settings, with a specific focus on the unique constraints of low-resource environments.
-* **AI Safety & Alignment:** I evaluate LLM safety policies within local contexts to ensure models respect regional norms and harm scenarios.
-* **Multimodal & Multilingual NLP:** Developing models that can process diverse data types (text, images, audio) in languages often ignored by mainstream AI.
-
+- **Clinical Evaluation of AI:** I study the deployment of AI in real-world healthcare settings, with a specific focus on the unique constraints of low-resource environments.
+- **AI Safety & Alignment:** I evaluate LLM safety policies within local contexts to ensure models respect regional norms and harm scenarios.
+- **Multimodal & Multilingual NLP:** Developing models that can process diverse data types (text, images, audio) in languages often ignored by mainstream AI.
