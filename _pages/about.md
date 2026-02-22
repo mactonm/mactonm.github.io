@@ -4,9 +4,9 @@ title: About
 permalink: /
 
 profile:
-  align: right
+  align: left
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: false # crops the image to make it circular
   more_info: >
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
@@ -32,3 +32,5 @@ My goal is to bridge the gap in AI capabilities for **low-resource and criticall
 - **Clinical Evaluation of AI:** I study the deployment of AI in real-world healthcare settings, with a specific focus on the unique constraints of low-resource environments.
 - **AI Safety & Alignment:** I evaluate LLM safety policies within local contexts to ensure models respect regional norms and harm scenarios.
 - **Multimodal & Multilingual NLP:** Developing models that can process diverse data types (text, images, audio) in languages often ignored by mainstream AI.
+
+---
