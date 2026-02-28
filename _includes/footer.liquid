@@ -15,6 +15,11 @@
   <footer class="fixed-bottom" role="contentinfo">
     <div class="container mt-0">
       {{ footer_contents }}
+      {% if site.footer_socials %}
+        <div class="social-links-footer">
+          {% social_links %}
+        </div>
+      {% endif %}
     </div>
   </footer>
 {% else %}

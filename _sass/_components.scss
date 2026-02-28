@@ -175,23 +175,23 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2.5rem;
 
     a {
       img {
-        width: 3.2rem;
-        height: 3.2rem;
-        margin-bottom: 1rem;
+        width: 2rem;
+        height: 2rem;
+        margin-bottom: 0.5rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
+        width: 2.2rem;
+        height: 2.5rem;
         margin-bottom: 0.5rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 2.2rem;
+          height: 2.2rem;
         }
       }
 
@@ -258,4 +258,84 @@ ul.task-list input[type="checkbox"] {
 
 .d2h-diff-table {
   position: relative;
+}
+
+// Add spacing to sections in the about page
+.post article > h2 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+// Align About Me content with profile image side-by-side
+@media (min-width: 900px) {
+  .post article {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .post article .profile {
+    width: 30%;
+    margin-left: 2rem;
+    float: none !important; /* Override the float for larger screens */
+  }
+
+  .post article .clearfix {
+    width: 65%; /* Adjusted width for the content */
+  }
+}
+/* Fix for flex disrupting other elements in article */
+.post article > *:not(.profile):not(.clearfix) {
+    width: 100%;
+    margin-top: 2rem; /* Add spacing for elements pushed below */
+}
+
+/* Ensure flex wrap so non-profile items go to new row */
+@media (min-width: 900px) {
+  .post article {
+    flex-wrap: wrap;
+  }
+}
+/* Override flex-direction for profile image */
+@media (min-width: 900px) {
+  .post article {
+     flex-direction: row; /* Default row */
+  }
+  
+  /* We want text on left (first in source) and image on right (second in source) 
+     Wait, in about.liquid, .profile is FIRST, then .clearfix (content).
+     With flex-direction: row, it would be Profile | Content. 
+     We want Content | Profile.
+     So flex-direction: row-reverse is actually correct if they are Profile, Content.
+     Let's check source order again.
+  */
+}
+@media (min-width: 900px) {
+  .post article {
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row; /* Keep standard order */
+     align-items: flex-start;
+  }
+  
+  .post article .profile {
+     order: 2; /* Move to right */
+     width: 30%;
+     margin-left: 2rem;
+     margin-bottom: 0;
+  }
+  
+  .post article .clearfix {
+     order: 1; /* Move to left */
+     width: 65%; /* Rest of space minus margin */
+     flex: 1;
+  }
+  
+  /* All other direct children (News, etc.) go below */
+  .post article > *:not(.profile):not(.clearfix) {
+     order: 3;
+     width: 100%;
+     flex-basis: 100%;
+  }
 }
