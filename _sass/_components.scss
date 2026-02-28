@@ -175,23 +175,23 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 2.5rem;
+    font-size: 2rem;
 
     a {
       img {
-        width: 2rem;
-        height: 2rem;
-        margin-bottom: 0.5rem;
+        width: 3.2rem;
+        height: 3.2rem;
+        margin-bottom: 1rem;
       }
 
       svg {
-        width: 2.2rem;
-        height: 2.5rem;
+        width: 3.5rem;
+        height: 4rem;
         margin-bottom: 0.5rem;
 
         image {
-          width: 2.2rem;
-          height: 2.2rem;
+          width: 3.5rem;
+          height: 3.5rem;
         }
       }
 
@@ -287,8 +287,8 @@ ul.task-list input[type="checkbox"] {
 }
 /* Fix for flex disrupting other elements in article */
 .post article > *:not(.profile):not(.clearfix) {
-    width: 100%;
-    margin-top: 2rem; /* Add spacing for elements pushed below */
+  width: 100%;
+  margin-top: 2rem; /* Add spacing for elements pushed below */
 }
 
 /* Ensure flex wrap so non-profile items go to new row */
@@ -300,9 +300,9 @@ ul.task-list input[type="checkbox"] {
 /* Override flex-direction for profile image */
 @media (min-width: 900px) {
   .post article {
-     flex-direction: row; /* Default row */
+    flex-direction: row; /* Default row */
   }
-  
+
   /* We want text on left (first in source) and image on right (second in source) 
      Wait, in about.liquid, .profile is FIRST, then .clearfix (content).
      With flex-direction: row, it would be Profile | Content. 
@@ -313,29 +313,58 @@ ul.task-list input[type="checkbox"] {
 }
 @media (min-width: 900px) {
   .post article {
-     display: flex;
-     flex-wrap: wrap;
-     flex-direction: row; /* Keep standard order */
-     align-items: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row; /* Keep standard order */
+    align-items: flex-start;
   }
-  
+
   .post article .profile {
-     order: 2; /* Move to right */
-     width: 30%;
-     margin-left: 2rem;
-     margin-bottom: 0;
+    order: 2; /* Move to right */
+    width: 30%;
+    margin-left: 2rem;
+    margin-bottom: 0;
   }
-  
+
   .post article .clearfix {
-     order: 1; /* Move to left */
-     width: 65%; /* Rest of space minus margin */
-     flex: 1;
+    order: 1; /* Move to left */
+    width: 65%; /* Rest of space minus margin */
+    flex: 1;
   }
-  
+
   /* All other direct children (News, etc.) go below */
   .post article > *:not(.profile):not(.clearfix) {
-     order: 3;
-     width: 100%;
-     flex-basis: 100%;
+    order: 3;
+    width: 100%;
+    flex-basis: 100%;
   }
+}
+/* Style contact-icons inside footer */
+footer .contact-icons {
+  font-size: 2.5rem; /* Set size as requested */
+  text-align: center;
+  margin-top: 1rem;
+
+  a {
+    color: var(--global-footer-text-color); /* Match footer text color */
+    margin: 0 0.5rem;
+
+    &:hover {
+      color: var(--global-theme-color);
+    }
+
+    i::before {
+      color: inherit; /* Ensure icon inherits color */
+    }
+  }
+}
+/* Ensure SVG icons also get sized correctly in footer */
+footer .contact-icons svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  fill: var(--global-footer-text-color);
+}
+footer .contact-icons img {
+  width: 2.5rem;
+  height: 2.5rem;
 }
