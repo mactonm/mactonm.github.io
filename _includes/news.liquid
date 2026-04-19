@@ -1,32 +1,45 @@
 <div class="news">
   {% if site.news != blank %}
-    {% assign news_size = site.news | size %}
+    {% assign news = site.news | reverse %}
+    {% assign news_size = news | size %}
+    {% assign announcements = page.announcements %}
+    {% assign is_scrollable = false %}
+    {% assign visible_items = 2 %}
+
+    {% if include.limit and announcements and announcements.scrollable %}
+      {% assign is_scrollable = true %}
+    {% endif %}
+
+    {% if include.limit and announcements and announcements.visible_items %}
+      {% assign visible_items = announcements.visible_items | plus: 0 %}
+    {% endif %}
+
+    {% if include.limit and announcements and announcements.limit and is_scrollable != true %}
+      {% assign news_limit = announcements.limit %}
+    {% else %}
+      {% assign news_limit = news_size %}
+    {% endif %}
+
     <div
-      class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
+      class="news-timeline-wrapper {% if is_scrollable and news_size > visible_items %}is-scrollable{% endif %}"
+      {% if is_scrollable %}
+        style="--news-visible-items: {{ visible_items }};{% if announcements.max_height %} --news-max-height: {{ announcements.max_height }};{% endif %}"
       {% endif %}
     >
-      <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and page.announcements.limit %}
-          {% assign news_limit = page.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
+      <ul class="news-timeline">
         {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
+          <li class="news-timeline-item">
+            <time class="news-timeline-date">{{ item.date | date: '%b %Y' }}</time>
+            <div class="news-timeline-content">
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {% endif %}
-            </td>
-          </tr>
+            </div>
+          </li>
         {% endfor %}
-      </table>
+      </ul>
     </div>
   {% else %}
     <p>No news so far...</p>

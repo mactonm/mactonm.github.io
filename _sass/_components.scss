@@ -78,6 +78,85 @@ ul.task-list input[type="checkbox"] {
   margin-right: 1rem;
 }
 
+// News timeline
+
+.news {
+  .news-timeline-wrapper {
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0.75rem;
+    background-color: var(--global-card-bg-color);
+    padding: 0.85rem 1rem;
+  }
+
+  .news-timeline-wrapper.is-scrollable {
+    max-height: var(--news-max-height, calc(var(--news-visible-items, 1) * 8.5rem));
+    overflow-y: auto;
+    scrollbar-width: thin;
+  }
+
+  .news-timeline {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .news-timeline-item {
+    position: relative;
+    margin: 0;
+    padding: 0 0 1rem 2rem;
+    border-left: 2px solid var(--global-divider-color);
+  }
+
+  .news-timeline-item:last-child {
+    border-left-color: transparent;
+    padding-bottom: 0;
+  }
+
+  .news-timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 0.45rem;
+    left: -0.45rem;
+    width: 0.75rem;
+    height: 0.75rem;
+    border-radius: 50%;
+    background-color: var(--global-theme-color);
+    box-shadow: 0 0 0 0.15rem var(--global-card-bg-color);
+  }
+
+  .news-timeline-date {
+    display: block;
+    margin-bottom: 0.2rem;
+    font-family: inherit;
+    font-size: 0.95rem;
+    letter-spacing: normal;
+    color: var(--global-text-color-light);
+    text-transform: none;
+  }
+
+  .news-timeline-content {
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .news-title {
+    font-weight: 600;
+  }
+}
+
+@media (max-width: 768px) {
+  .news {
+    .news-timeline-item {
+      padding-left: 1.75rem;
+    }
+
+    .news-timeline-content {
+      font-size: 0.95rem;
+    }
+  }
+}
+
 @media (min-width: 576px) {
   .profile {
     width: 30%;
@@ -289,6 +368,19 @@ ul.task-list input[type="checkbox"] {
 .post article > *:not(.profile):not(.clearfix) {
   width: 100%;
   margin-top: 2rem; /* Add spacing for elements pushed below */
+}
+
+/* Keep section content close to its heading with a comfortable gap */
+.post article > .news:not(.profile):not(.clearfix),
+.post article > .publications:not(.profile):not(.clearfix) {
+  margin-top: 0.55rem;
+}
+
+/* Add a bit more separation before the Publications heading after News */
+.post article > .news + h2 {
+  margin-top: 2.4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--global-divider-color);
 }
 
 /* Ensure flex wrap so non-profile items go to new row */

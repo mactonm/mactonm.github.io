@@ -1,12 +1,12 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
-inline: false
+title: Our paper "UbuntuGuard" accepted to ACL 2026
+date: 2026-04-07 16:11:00-0400
+inline: true
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+**New Paper!** 📚 Our work, _"UbuntuGuard: A Culturally-Grounded Policy Benchmark for Equitable AI Safety in African Languages"_ has been accepted to the **ACL 2026** :sparkles: :rocket:
 
 ---
 
