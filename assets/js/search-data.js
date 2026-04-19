@@ -379,16 +379,14 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "news-a-simple-inline-announcement",
-          title: 'A simple inline announcement.',
+      },{id: "news-our-paper-accepted-to-aaai-lm4uc-workshop",
+          title: 'Our paper accepted to AAAI@LM4UC workshop.',
           description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
-          description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
-            },},{id: "news-new-paper-our-work-learning-from-scarcity-building-and-benchmarking-speech-technology-for-sukuma-has-been-accepted-to-the-eacl-2026-workshop-on-language-models-for-low-resource-languages-loreslm-sparkles-rocket",
+          section: "News",},{id: "news-new-paper-our-work-learning-from-scarcity-building-and-benchmarking-speech-technology-for-sukuma-has-been-accepted-to-the-eacl-2026-workshop-on-language-models-for-low-resource-languages-loreslm-sparkles-rocket",
           title: 'New Paper! 📚 Our work, “Learning from Scarcity: Building and Benchmarking Speech Technology...',
+          description: "",
+          section: "News",},{id: "news-new-paper-our-work-ubuntuguard-a-culturally-grounded-policy-benchmark-for-equitable-ai-safety-in-african-languages-has-been-accepted-to-the-acl-2026-sparkles-rocket",
+          title: 'New Paper! 📚 Our work, “UbuntuGuard: A Culturally-Grounded Policy Benchmark for Equitable AI...',
           description: "",
           section: "News",},{id: "projects-project-1",
           title: 'project 1',
