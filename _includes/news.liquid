@@ -14,6 +14,8 @@
       {% assign visible_items = announcements.visible_items | plus: 0 %}
     {% endif %}
 
+    {% assign fallback_max_height = visible_items | times: 8.5 %}
+
     {% if include.limit and announcements and announcements.limit and is_scrollable != true %}
       {% assign news_limit = announcements.limit %}
     {% else %}
@@ -23,7 +25,7 @@
     <div
       class="news-timeline-wrapper {% if is_scrollable and news_size > visible_items %}is-scrollable{% endif %}"
       {% if is_scrollable %}
-        style="--news-visible-items: {{ visible_items }};{% if announcements.max_height %} --news-max-height: {{ announcements.max_height }};{% endif %}"
+        style="--news-max-height: {% if announcements.max_height %}{{ announcements.max_height }}{% else %}{{ fallback_max_height }}rem{% endif %};"
       {% endif %}
     >
       <ul class="news-timeline">

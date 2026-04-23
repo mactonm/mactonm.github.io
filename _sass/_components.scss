@@ -89,7 +89,7 @@ ul.task-list input[type="checkbox"] {
   }
 
   .news-timeline-wrapper.is-scrollable {
-    max-height: var(--news-max-height, calc(var(--news-visible-items, 1) * 8.5rem));
+    max-height: var(--news-max-height, 8.5rem);
     overflow-y: auto;
     scrollbar-width: thin;
   }
