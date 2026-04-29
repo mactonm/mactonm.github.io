@@ -1,6 +1,10 @@
 metadata:
-  last_updated: '2026-02-25'
+  last_updated: '2026-04-29'
 papers:
+  y6KKlnQAAAAJ:5nxA0vEk-isC:
+    citations: 0
+    title: 'Learning from Scarcity: Building and Benchmarking Speech Technology for Sukuma.'
+    year: '2026'
   y6KKlnQAAAAJ:Se3iqnhoufwC:
     citations: 4
     title: 'Beyond contrastive learning: Synthetic data enables list-wise training with multiple levels of relevance'
