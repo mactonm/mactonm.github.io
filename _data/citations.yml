@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-06-15'
+  last_updated: '2026-08-05'
 papers:
   y6KKlnQAAAAJ:5nxA0vEk-isC:
-    citations: 0
+    citations: 1
     title: 'Learning from Scarcity: Building and Benchmarking Speech Technology for Sukuma.'
     year: '2026'
   y6KKlnQAAAAJ:Se3iqnhoufwC:
@@ -11,9 +11,9 @@ papers:
     year: '2025'
   y6KKlnQAAAAJ:UebtZRa9Y70C:
     citations: 1
-    title: 'UbuntuGuard: A Culturally-Grounded Policy Benchmark for Equitable AI Safety in African Languages'
+    title: 'UbuntuGuard: A Culturally-Grounded Policy Benchmark for Equitable AI Safety in African Languages.'
     year: '2026'
   y6KKlnQAAAAJ:hqOjcs7Dif8C:
-    citations: 0
+    citations: 1
     title: 'UbuntuGuard: A Policy-Based Safety Benchmark for Low-Resource African Languages'
     year: '2026'
