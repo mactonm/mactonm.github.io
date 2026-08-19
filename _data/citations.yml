@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-05'
+  last_updated: '2026-08-19'
 papers:
   y6KKlnQAAAAJ:5nxA0vEk-isC:
     citations: 1
@@ -10,7 +10,7 @@ papers:
     title: 'Beyond contrastive learning: Synthetic data enables list-wise training with multiple levels of relevance'
     year: '2025'
   y6KKlnQAAAAJ:UebtZRa9Y70C:
-    citations: 1
+    citations: 3
     title: 'UbuntuGuard: A Culturally-Grounded Policy Benchmark for Equitable AI Safety in African Languages.'
     year: '2026'
   y6KKlnQAAAAJ:hqOjcs7Dif8C:
