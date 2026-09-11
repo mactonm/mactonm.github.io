@@ -16,7 +16,18 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "post-a-post-with-plotly-js",
+        },{id: "post-accessing-transformer-internal-representations",
+        
+          title: "Accessing Transformer Internal Representations",
+        
+        description: "A step-by-step guide to reading hidden states, attentions, and activations from transformer models.",
+        section: "Posts",
+        handler: () => {
+          
+            window.location.href = "/blog/2026/accessing-transformer-internal-representations/";
+          
+        },
+      },{id: "post-a-post-with-plotly-js",
         
           title: "a post with plotly.js",
         
