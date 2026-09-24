@@ -2,21 +2,27 @@
 layout: about
 title: About me
 permalink: /
+subtitle: PhD student, Brown University
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: true # crops the image to make it circular
+  image_circular: true
+  alt: Portrait of Macton Mgonzo
+  role: PhD Student
+  institution: Brown University
+  email: macton@brown.edu
+  cv: /assets/pdf/macton_resume.pdf
   more_info: >
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: false
+selected_projects: false # set true to show the Selected Projects section on the homepage
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # keeps the panel compact and allows scrolling through older items
-  visible_items: 1 # show one announcement at a time before scrolling
-  max_height: 6rem # compact frame height for a single visible announcement
+  enabled: true
+  scrollable: false
+  limit: 3 # number of news items shown on the homepage
 
 latest_posts:
   enabled: false
@@ -24,14 +30,15 @@ latest_posts:
   limit: 3 # leave blank to include all the blog posts
 ---
 
-I am a PhD student at [Brown University](https://www.brown.edu/) specializing in **Machine Learning** and **Natural Language Processing**.
+<!-- # **Macton** Mgonzo -->
 
-My goal is to bridge the gap in AI capabilities for **low-resource and critically underrepresented languages**. My work explores multimodal models and robust evaluation frameworks to ensure that advancements in AI are accessible, safe, and culturally aligned for global communities.
+### **About me!**
 
-<i class="fa-solid fa-microscope"></i> Current Research Areas
+I am a PhD student at [Brown University](https://www.brown.edu/), affiliated with the [Data Science Institute](https://dsi.brown.edu/). My research interests span **machine learning, natural language processing, and AI safety**, with a particular focus on **low-resource languages and clinical decision support systems**.
 
-- **Clinical Evaluation of AI:** I study the deployment of AI in real-world healthcare settings, with a specific focus on the unique constraints of low-resource environments.
-- **AI Safety & Alignment:** I evaluate LLM safety policies within local contexts to ensure models respect regional norms and harm scenarios.
-- **Multimodal & Multilingual NLP:** Developing models that can process diverse data types (text, images, audio) in languages often ignored by mainstream AI.
+A central premise of my research is that benchmark performance alone is insufficient evidence for real-world deployment. My work focuses on developing **benchmarks, practical and robust evaluation methods, and evaluation frameworks** for assessing AI systems **beyond static benchmarks**. Ultimately, my goal is to ensure that AI is **safely, reliably, and equitably** deployed.
 
----
+
+Beyond research, I enjoy travelling and exploring new places.
+
+

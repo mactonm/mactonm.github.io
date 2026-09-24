@@ -1,20 +1,35 @@
-{% capture footer_contents %}
-  &copy; Copyright {{ site.time | date: '%Y' }}
+{% capture footer_name %}
+  &copy; {{ site.time | date: '%Y' }}
   {{ site.first_name }}
   {{ site.middle_name }}
-  {{ site.last_name }}. {{ site.footer_text }}
-  {% if site.impressum_path %}
-    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>.
-  {% endif %}
+  {{ site.last_name }}
+{% endcapture %}
+
+{% capture footer_note %}
   {% if site.last_updated %}
-    Last updated: {{ 'now' | date: '%B %d, %Y' }}.
+    Updated {{ 'now' | date: '%B %Y' }}
+  {% endif %}
+  {% if site.impressum_path %}
+    {% if site.last_updated %}
+      <span aria-hidden="true">&middot;</span>
+    {% endif %}
+    <a href="{{ site.url }}{{ site.baseurl }}{{ site.impressum_path }}">Impressum</a>
   {% endif %}
 {% endcapture %}
 
 {% if site.footer_fixed %}
   <footer class="fixed-bottom" role="contentinfo">
-    <div class="container mt-0">
-      {{ footer_contents }}
+    <div class="container mt-0 footer-shell">
+      <p class="footer-copy">{{ footer_name }}</p>
+      {% assign footer_note_text = footer_note | strip %}
+      {% if footer_note_text != '' %}
+        <p class="footer-note">{{ footer_note }}</p>
+      {% endif %}
+      {% if site.data.socials.email %}
+        <a class="footer-cta" href="mailto:{{ site.data.socials.email | encode_email }}"
+          >Start a conversation <span aria-hidden="true">&rarr;</span></a
+        >
+      {% endif %}
       {% if site.footer_socials %}
         <div class="contact-icons">
           {% social_links %}
@@ -29,7 +44,16 @@
     {% endif %}
 
     <div class="container">
-      {{ footer_contents }}
+      <p class="footer-copy">{{ footer_name }}</p>
+      {% assign footer_note_text = footer_note | strip %}
+      {% if footer_note_text != '' %}
+        <p class="footer-note">{{ footer_note }}</p>
+      {% endif %}
+      {% if site.data.socials.email %}
+        <p class="footer-cta">
+          <a href="mailto:{{ site.data.socials.email | encode_email }}">Start a conversation <span aria-hidden="true">&rarr;</span></a>
+        </p>
+      {% endif %}
       {% if site.footer_socials %}
         <div class="contact-icons">
           {% social_links %}

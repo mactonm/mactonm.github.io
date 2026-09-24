@@ -1,48 +1,50 @@
-<div class="news">
+<div class="news{% if include.timeline %} news-timeline-view{% endif %}">
   {% if site.news != blank %}
     {% assign news = site.news | reverse %}
     {% assign news_size = news | size %}
     {% assign announcements = page.announcements %}
     {% assign is_scrollable = false %}
-    {% assign visible_items = 2 %}
+    {% assign news_limit = news_size %}
+    {% assign is_expandable = false %}
 
     {% if include.limit and announcements and announcements.scrollable %}
       {% assign is_scrollable = true %}
     {% endif %}
 
-    {% if include.limit and announcements and announcements.visible_items %}
-      {% assign visible_items = announcements.visible_items | plus: 0 %}
-    {% endif %}
-
-    {% assign fallback_max_height = visible_items | times: 8.5 %}
-
     {% if include.limit and announcements and announcements.limit and is_scrollable != true %}
       {% assign news_limit = announcements.limit %}
-    {% else %}
-      {% assign news_limit = news_size %}
+      {% if news_size > news_limit %}
+        {% assign is_expandable = true %}
+      {% endif %}
     {% endif %}
 
     <div
-      class="news-timeline-wrapper {% if is_scrollable and news_size > visible_items %}is-scrollable{% endif %}"
+      class="news-list-wrapper {% if is_scrollable %}news-list-scrollable{% endif %}{% if is_expandable %} news-list-collapsible is-collapsed{% endif %}"
       {% if is_scrollable %}
-        style="--news-max-height: {% if announcements.max_height %}{{ announcements.max_height }}{% else %}{{ fallback_max_height }}rem{% endif %};"
+        style="max-height: 60vw"
+      {% endif %}
+      {% if is_expandable %}
+        data-news-limit="{{ news_limit }}"
       {% endif %}
     >
-      <ul class="news-timeline">
-        {% for item in news limit: news_limit %}
-          <li class="news-timeline-item">
-            <time class="news-timeline-date">{{ item.date | date: '%b %Y' }}</time>
-            <div class="news-timeline-content">
+      <div class="news-list" role="list">
+        {% for item in news %}
+          <article class="news-item{% if is_expandable and forloop.index > news_limit %} news-item-extra{% endif %}" role="listitem">
+            <p class="news-meta">{{ item.date | date: '%b %Y' }}</p>
+            <div class="news-copy">
               {% if item.inline %}
                 {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
               {% else %}
                 <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
               {% endif %}
             </div>
-          </li>
+          </article>
         {% endfor %}
-      </ul>
+      </div>
     </div>
+    {% if is_expandable %}
+      <button class="news-toggle-button" type="button" aria-expanded="false">More news <span aria-hidden="true">&darr;</span></button>
+    {% endif %}
   {% else %}
     <p>No news so far...</p>
   {% endif %}

@@ -1,0 +1,12 @@
+Ran terminal command:  git status --short
+
+To publish, run:
+
+```bash
+npx prettier . --write          # required by the prettier CI check
+git add -A
+git commit -m "Redesign homepage, teal accents, project images"
+git push origin main
+```
+
+Note `papers.bib` also has edits you made separately — review that it's what you want before committing.

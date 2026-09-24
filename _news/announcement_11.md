@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper accepted to AAAI@LM4UC workshop.
+UbuntuGuard accepted to the **AAAI LM4UC workshop** on language models for underrepresented communities.

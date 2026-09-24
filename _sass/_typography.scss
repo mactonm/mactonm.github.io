@@ -19,6 +19,31 @@ strong {
   color: var(--global-text-color);
 }
 
+body {
+  font-family: var(--global-body-font);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--global-display-font);
+  letter-spacing: 0;
+}
+
+a:focus,
+button:focus,
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid var(--global-teal-color) !important;
+  outline-offset: 3px !important;
+  box-shadow: 0 0 0 3px var(--global-bg-color), 0 0 0 5px var(--global-teal-color) !important;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -40,7 +65,7 @@ table.table a {
   color: var(--global-theme-color);
 
   &:hover {
-    color: var(--global-theme-color);
+    color: var(--global-hover-color);
     text-decoration: underline;
   }
 

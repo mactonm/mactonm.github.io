@@ -25,7 +25,19 @@ $pink-color-light: #ffdddd !default;
 $yellow-color: #efcc00 !default;
 $teal-color: #008080 !default;
 $teal-color-dark: #004d4d !default;
-$teal-color-light: color.adjust($teal-color, $lightness: 25%);
+$teal-color-light: #2ab5b5 !default;
+
+// Site palette: deep indigo primary with a warm gold accent
+$indigo-color: #1f4e8c !default;
+$indigo-color-dark: #0f2340 !default;
+$indigo-color-light: #8ab8ff !default;
+$gold-color: #c9932b !default;
+$gold-color-light: #f0c060 !default;
+$ink-color: #10203c !default;
+$slate-color: #53647d !default;
+
+// Monospace stack for small labels (venue pills, link chips)
+$mono-font: "IBM Plex Mono", "SFMono-Regular", Menlo, Consolas, "Liberation Mono", monospace !default;
 
 $grey-color: #828282 !default;
 $grey-color-light: color.adjust($grey-color, $lightness: 40%);

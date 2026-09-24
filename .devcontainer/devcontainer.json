@@ -13,11 +13,19 @@
     },
     "ghcr.io/devcontainers-extra/features/prettier:1.0.2": {}
   },
-  // Optionally: run jekyll serve automatically on container entering using the Docker entrypoint
-  "postAttachCommand": "./bin/entry_point.sh",
+  // Run Jekyll automatically when the container starts.
+  "postStartCommand": "nohup ./bin/entry_point.sh >/tmp/jekyll-entrypoint.log 2>&1 &",
+  "forwardPorts": [
+    8080,
+    35729
+  ],
   "customizations": {
     "vscode": {
-      "extensions": ["esbenp.prettier-vscode", "sissel.shopify-liquid", "yzhang.markdown-all-in-one"],
+      "extensions": [
+        "esbenp.prettier-vscode",
+        "sissel.shopify-liquid",
+        "yzhang.markdown-all-in-one"
+      ],
       "settings": {
         "prettier.configPath": ".prettierrc",
         "editor.formatOnSave": true

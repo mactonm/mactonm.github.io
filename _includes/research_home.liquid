@@ -1,0 +1,46 @@
+<div class="homepage-sections">
+  <section class="homepage-section research-agenda reveal" id="research">
+    <div class="homepage-section-heading">
+      <h2>Research</h2>
+      <a href="{{ '/projects/' | relative_url }}">Learn more about my research <span aria-hidden="true">&rarr;</span></a>
+    </div>
+    <div class="agenda-grid">
+      <div class="agenda-item">
+        <div class="agenda-heading">
+          <i class="fa-solid fa-globe" aria-hidden="true"></i>
+          <h3>Multilingual AI safety</h3>
+        </div>
+        <p>Building and evaluating models in low-resource languages and modalities, with culturally grounded safety policies.</p>
+      </div>
+      <div class="agenda-item">
+        <div class="agenda-heading">
+          <i class="fa-solid fa-chart-column" aria-hidden="true"></i>
+          <h3>Human–AI Interaction</h3>
+        </div>
+        <p>Using causal inference to attribute real-world outcomes to model behavior, context, and human–AI interaction.</p>
+      </div>
+      <div class="agenda-item">
+        <div class="agenda-heading">
+          <i class="fa-solid fa-stethoscope" aria-hidden="true"></i>
+          <h3>Clinical AI Evaluation</h3>
+        </div>
+        <p>What evidence should precede deployment? Adapting staged evaluation to low-resource health systems.</p>
+      </div>
+    </div>
+  </section>
+
+  {% if page.selected_projects and site.projects != blank %}
+    <section class="homepage-section selected-projects reveal" id="projects">
+      <div class="homepage-section-heading">
+        <h2>Selected Projects</h2>
+        <a href="{{ '/projects/' | relative_url }}">All projects <span aria-hidden="true">&rarr;</span></a>
+      </div>
+      <div class="project-question-grid">
+        {% assign sorted_projects = site.projects | sort: 'importance' %}
+        {% for project in sorted_projects limit: 3 %}
+          {% include projects.liquid %}
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+</div>
